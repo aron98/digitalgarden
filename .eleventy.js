@@ -509,6 +509,15 @@ export default function (eleventyConfig) {
     return str && parsed.innerHTML;
   });
 
+  // Fix XML link tags for RSS feeds
+  eleventyConfig.addTransform("xmlFix", (content, outputPath) => {
+    if (outputPath && outputPath.endsWith(".xml")) {
+      // Fix broken link tags by adding proper closing tags
+      content = content.replace(/<link([^>]+)>(?![^<]*<\/link>)/g, '<link$1></link>');
+    }
+    return content;
+  });
+
   eleventyConfig.addTransform("htmlMinifier", (content, outputPath) => {
     if (
       (process.env.NODE_ENV === "production" || process.env.ELEVENTY_ENV === "prod") &&
