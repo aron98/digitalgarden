@@ -21,3 +21,4 @@ So this is my journal and portfolio.
 # Get in touch
 
 - Write me an email: [aron@macrosaas.me](mailto:aron@macrosaas.me)
+- Find me on X: [@AronBuildsSaaS](https://x.com/AronBuildsSaaS)
