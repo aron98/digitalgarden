@@ -29,5 +29,11 @@ export default {
       });
       return noteSettings;
     },
+    created: (data) => {
+      return data.created || data.page.date;
+    },
+    updated: (data) => {
+      return data.updated || data.page.date;
+    },
   },
 };

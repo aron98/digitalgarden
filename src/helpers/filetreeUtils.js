@@ -1,5 +1,5 @@
 const sortTree = (unsorted) => {
-  //Sort by folder before file, then by name
+  //Sort by folder before file, then by creation date for notes, then by name
   const orderedTree = Object.keys(unsorted)
     .sort((a, b) => {
 
@@ -22,6 +22,23 @@ const sortTree = (unsorted) => {
 
       if (!a_is_note && b_is_note) {
         return -1;
+      }
+
+      // If both are notes, sort by creation date (newest first)
+      if (a_is_note && b_is_note) {
+        const a_date = unsorted[a].createdDate;
+        const b_date = unsorted[b].createdDate;
+        
+        if (a_date && b_date) {
+          const dateA = new Date(a_date);
+          const dateB = new Date(b_date);
+          // Sort by newest first (descending order)
+          return dateB - dateA;
+        }
+        
+        // If one has a date and the other doesn't, prioritize the one with a date
+        if (a_date && !b_date) return -1;
+        if (!a_date && b_date) return 1;
       }
 
       //Regular expression that extracts any initial decimal number
@@ -56,7 +73,7 @@ const sortTree = (unsorted) => {
   return orderedTree;
 };
 
-function getPermalinkMeta(note, key) {
+function getPermalinkMeta(note) {
   let permalink = "/";
   let parts = note.filePathStem.split("/");
   let name = parts[parts.length - 1];
@@ -64,6 +81,7 @@ function getPermalinkMeta(note, key) {
   let hide = false;
   let pinned = false;
   let folders = null;
+  let createdDate = null;
   try {
     if (note.data.permalink) {
       permalink = note.data.permalink;
@@ -85,6 +103,8 @@ function getPermalinkMeta(note, key) {
     if (note.data.pinned) {
       pinned = note.data.pinned;
     }
+    // Get creation date - prefer frontmatter 'created', fallback to Eleventy's date
+    createdDate = note.data.createdDate || note.date;
     if (note.data["dg-path"]) {
       folders = note.data["dg-path"].split("/");
     } else {
@@ -97,7 +117,7 @@ function getPermalinkMeta(note, key) {
     //ignore
   }
 
-  return [{ permalink, name, noteIcon, hide, pinned }, folders];
+  return [{ permalink, name, noteIcon, hide, pinned, createdDate }, folders];
 }
 
 function assignNested(obj, keyPath, value) {
@@ -119,6 +139,16 @@ function getFileTree(data) {
     assignNested(tree, folders, { isNote: true, ...meta });
   });
   const fileTree = sortTree(tree);
+  
+  // If the entire tree is wrapped in a single root folder, return its children instead
+  const rootKeys = Object.keys(fileTree);
+  if (rootKeys.length === 1 && fileTree[rootKeys[0]].isFolder) {
+    const rootFolderContents = fileTree[rootKeys[0]];
+    // Remove the isFolder property from the root and return its contents
+    const { isFolder, ...contents } = rootFolderContents;
+    return contents;
+  }
+  
   return fileTree;
 }
 
