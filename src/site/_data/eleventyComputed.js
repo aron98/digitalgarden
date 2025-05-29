@@ -1,9 +1,9 @@
-const { getGraph } = require("../../helpers/linkUtils");
-const { getFileTree } = require("../../helpers/filetreeUtils");
-const { userComputed } = require("../../helpers/userUtils");
+import { getGraph } from "../../helpers/linkUtils.js";
+import { getFileTree } from "../../helpers/filetreeUtils.js";
+import { userComputed } from "../../helpers/userUtils.js";
 
-module.exports = {
-  graph: (data) => getGraph(data),
+export default {
+  graph: async (data) => await getGraph(data),
   filetree: (data) => getFileTree(data),
   userComputed: (data) => userComputed(data)
 };

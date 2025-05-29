@@ -101,9 +101,9 @@ function getPermalinkMeta(note, key) {
 }
 
 function assignNested(obj, keyPath, value) {
-  lastKeyIndex = keyPath.length - 1;
+  const lastKeyIndex = keyPath.length - 1;
   for (var i = 0; i < lastKeyIndex; ++i) {
-    key = keyPath[i];
+    const key = keyPath[i];
     if (!(key in obj)) {
       obj[key] = { isFolder: true };
     }
@@ -122,4 +122,4 @@ function getFileTree(data) {
   return fileTree;
 }
 
-exports.getFileTree = getFileTree;
+export { getFileTree };
