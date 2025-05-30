@@ -104,7 +104,7 @@ function getPermalinkMeta(note) {
       pinned = note.data.pinned;
     }
     // Get creation date - prefer frontmatter 'created', fallback to Eleventy's date
-    createdDate = note.data.createdDate || note.date;
+    createdDate = note.data.created || note.date;
     if (note.data["dg-path"]) {
       folders = note.data["dg-path"].split("/");
     } else {
