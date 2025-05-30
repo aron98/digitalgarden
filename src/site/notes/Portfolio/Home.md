@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/portfolio/home/","pinned":true,"tags":["gardenEntry"]}
+{"dg-publish":true,"permalink":"/portfolio/home/","metatags":[" description: \"My journal and portfolio, exploring the intersection of software development, AI, and business. Follow along for blog posts, projects, and updates on creating innovative software services.\""],"pinned":true,"tags":["gardenEntry"]}
 ---
 
 # Hello world 🚀
