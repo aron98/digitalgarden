@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/portfolio/blog/increasing-claude-code-s-context-window-for-specific-tasks/","metatags":["description: \"Learn how to improve Claude Code's performance on large tasks by leveraging its documentation capabilities. Discover how to use the /init command, create a CLAUDE.md file, and utilize task-specific markdown files to enhance Claude's understanding and retention of todo lists.\"","\"og:image\": \"../images/blog-1-og-image.png\""]}
+{"dg-publish":true,"permalink":"/portfolio/blog/increasing-claude-code-s-context-window-for-specific-tasks/","metatags":["description: \"Learn how to improve Claude Code's performance on large tasks by leveraging its documentation capabilities. Discover how to use the /init command, create a CLAUDE.md file, and utilize task-specific markdown files to enhance Claude's understanding and retention of todo lists.\"","\"og:image\": \"/img/user/Portfolio/images/blog-1-og-image.png\""]}
 ---
 
 I've been experimenting with Claude Code since its release last week. It's a powerful tool, and I'll be writing about how it accelerated my progress on several projects.
