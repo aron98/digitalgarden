@@ -31,8 +31,8 @@
 
 {% favicons './src/site/favicon.png', appleIconBgColor='#123' %}
 
-{% if metatags %}
-    {% for name, content in metatags %}
+{% if parsedMetatags %}
+    {% for name, content in parsedMetatags %}
         <meta name="{{ name }}" content="{{ content }}">
     {% endfor %}
 {% endif %}
