@@ -12,7 +12,7 @@ So this is my journal and portfolio.
 
 # Portfolio
 
-... Looking a bit empty for now, but follow my blogpost series to see the progress.
+[<div style="display: grid;"><div style="box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); transition: 0.3s;" onMouseOver="this.style.box-shadow='0 8px 16px 0 rgba(0,0,0,0.2);'" onMouseOut="this.style.box-shadow=''0 4px 8px 0 rgba(0,0,0,0.2); transition: 0.3s;"><img src="../images/seatmapp-preview.jpeg" alt="seatm.app" style="width:100%"><div style="padding: 2px 16px;"><h4><b>seatm.app</b></h4><p>Seat reservation for small companies</p></div></div></div>](/portfolio/projects/seat-mapp/)
 
 # Newest blogposts
 
