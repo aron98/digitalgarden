@@ -459,7 +459,7 @@ export default function (eleventyConfig) {
     const parsed = parse(str);
     for (const imageTag of parsed.querySelectorAll(".cm-s-obsidian img")) {
       const src = imageTag.getAttribute("src");
-      if (src && src.startsWith("/") && !src.endsWith(".svg")) {
+      if (src && src.startsWith("/") && !src.endsWith(".svg") && !src.endsWith(".gif")) {
         const cls = imageTag.classList.value;
         const alt = imageTag.getAttribute("alt");
         const width = imageTag.getAttribute("width") || '';
