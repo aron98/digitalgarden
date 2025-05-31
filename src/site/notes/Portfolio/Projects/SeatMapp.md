@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/portfolio/projects/seat-mapp/","metatags":["description: \"SeatMapp is a simple and affordable seat reservation platform for small businesses and startups. With a focus on ease of use and tenant separation, SeatMapp offers a cost-effective alternative to traditional reservation systems. Learn more about its features, pricing, and development story.\""],"created":"2025-05-30 17:32"}
+{"dg-publish":true,"permalink":"/portfolio/projects/seat-mapp/","metatags":["description: \"SeatMapp is a simple and affordable seat reservation platform for small businesses and startups. With a focus on ease of use and tenant separation, SeatMapp offers a cost-effective alternative to traditional reservation systems. Learn more about its features, pricing, and development story.\"","\"og:image\": \"https://macrosaas.me/img/seatmapp-preview.jpeg\""],"created":"2025-05-30 17:32"}
 ---
 
 
