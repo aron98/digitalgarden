@@ -12,7 +12,7 @@ So this is my journal and portfolio.
 
 # Portfolio
 
-<div style="display: flex; flex-wrap: wrap; padding: 4px;"><div style="box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); flex: 50%; padding: 4px;"><a href="/portfolio/projects/seat-mapp/"><img src="https://macrosaas.me/img/seatmapp-preview.jpeg" alt="seatm.app" style="vertical-align: middle;"><div style="padding: 2px 16px;"><h4><b>seatm.app</b></h4><p>Seat reservation for small companies</p></div></a></div></div>
+<div style="display: flex; flex-wrap: wrap; padding: 4px;"><div style="box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); flex: 50%; padding: 4px;"><a href="/portfolio/projects/seat-mapp/"><img src="https://macrosaas.me/img/seatmapp-preview.jpeg" alt="seatm.app" style="vertical-align: middle;"><div style="padding: 2px 16px;"><h4><b>seatm.app</b></h4><p>Seat reservation for small companies</p></div></a></div><div style="box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); flex: 50%; padding: 4px;"><img src="https://macrosaas.me/img/coming-soon.jpg" alt="coming soon" style="vertical-align: middle;"><div style="padding: 2px 16px;"><h4><b>Extra finder</b></h4><p>Connects movie directors with the most matching movie extas. Coming soon...</p></div></div></div>
 
 # Newest blogposts
 
