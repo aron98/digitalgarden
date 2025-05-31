@@ -12,7 +12,7 @@ So this is my journal and portfolio.
 
 # Portfolio
 
-<div style="display: grid;"><div style="box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); transition: 0.3s;"><a href="/portfolio/projects/seat-mapp/"><img src="https://macrosaas.me/img/seatmapp-preview.jpeg" alt="seatm.app" style="width:100%"><div style="padding: 2px 16px;"><h4><b>seatm.app</b></h4><p>Seat reservation for small companies</p></div></a></div></div>
+<div style="display: grid;"><div style="box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); transition: 0.3s;"><a href="/portfolio/projects/seat-mapp/"><img src="https://macrosaas.me/img/seatmapp-preview.jpeg" alt="seatm.app" style="width:100%"><div style="padding: 2px 16px;"><h4><b>seatm.app</b></h4><p>Seat reservation for small companies</p></div></a></div><div></div><div></div></div>
 
 # Newest blogposts
 
